@@ -1,0 +1,1 @@
+montageDefine("1c0e374","package.json",{exports:{name:"popcorn",version:"0.0.2",hash:"1c0e374",directories:{lib:"./"},mappings:{montage:{name:"montage",hash:"0fe37da",location:"packages/montage@0fe37da/"}},production:!0,useScriptInjection:!0}})
