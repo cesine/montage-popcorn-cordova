@@ -1,0 +1,29 @@
+<html>
+  <head>
+	<title>Test JSONP in a Webview</title>
+  </head>
+  <body>
+
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.js"></script>
+  	
+  	<script>
+  	$(document).ready(function(){
+  		$.support.cors = true;
+  		$.mobile.allowCrossDomainPages = true;
+  		$.ajax({
+  		        url: 'http://sub.foo.com/json.php?callback=?',
+  		        dataType: 'jsonp',
+  		        jsonp: 'jsoncallback',
+  		        timeout: 5000,
+  		        success: function(data, status){
+  		                alert("OK");
+  		        },
+  		        error: function(){
+  		                alert("Error");
+  		        }
+  		});
+  	})
+  	</script>
+  </body>
+</html>

@@ -6,16 +6,15 @@ import ca.ilanguage.oprime.activity.HTML5Activity;
 import ca.ilanguage.oprime.content.JavaScriptInterface;
 
 public class HTML5WebView extends HTML5Activity {
-
+	HTML5JavaScriptInterface jsi; 
 	@Override
 	public JavaScriptInterface getJavaScriptInterface() {
-		// TODO Auto-generated method stub
-		return null;
+		return jsi;
 	}
 
 	@Override
 	public void setJavaScriptInterface(JavaScriptInterface javaScriptInterface) {
-		// TODO Auto-generated method stub
+		this.jsi = (HTML5JavaScriptInterface) javaScriptInterface;
 
 	}
 
@@ -29,7 +28,7 @@ public class HTML5WebView extends HTML5Activity {
 	protected void setUpVariables() {
 		D = true;
 		mOutputDir = "/sdcard/demos";
-		mInitialAppServerUrl = "file:///android_asset/www/index.html";// "http://192.168.0.180:3001/";
+		mInitialAppServerUrl = "file:///android_asset/test_jsonp/index.html";// "http://192.168.0.180:3001/";
 		this.setJavaScriptInterface(new HTML5JavaScriptInterface(D, TAG,
 				mOutputDir, getApplicationContext(), this, ""));
 		if (D)

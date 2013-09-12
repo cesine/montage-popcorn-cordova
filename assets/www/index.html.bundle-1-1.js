@@ -1003,6 +1003,10 @@ montageDefine("0fe37da", "ui/repetition.reel/repetition", {
 					//
 					//http://stackoverflow.com/questions/15937341/phonegap-ajax-jsonp-working-on-pc-but-not-in-android
 					//
+					//
+					//http://ashwinrayaprolu.wordpress.com/2011/03/10/using-web-view-in-android-and-loading-data-over-network/
+					//
+					//http://stackoverflow.com/questions/15937341/phonegap-ajax-jsonp-working-on-pc-but-not-in-android
 
 
 					document.head.appendChild(r)
