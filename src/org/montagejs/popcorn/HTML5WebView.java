@@ -28,7 +28,7 @@ public class HTML5WebView extends HTML5Activity {
 	protected void setUpVariables() {
 		D = true;
 		mOutputDir = "/sdcard/demos";
-		mInitialAppServerUrl = "file:///android_asset/test_jsonp/index.html";// "http://192.168.0.180:3001/";
+		mInitialAppServerUrl = "file:///android_asset/popcorn13/index.html";// "http://192.168.0.180:3001/";
 		this.setJavaScriptInterface(new HTML5JavaScriptInterface(D, TAG,
 				mOutputDir, getApplicationContext(), this, ""));
 		if (D)
