@@ -4,7 +4,7 @@ This project should open and build in the Android SDK.
 
 ## Development
 
-The popcorn source is stored in [assets/popcorn](assets/popcorn), which is then built using [Mop](https://github.com/montagejs/mop) and then copied to [assets/www](assets/www).
+The popcorn source is stored in [assets/popcorn](assets/popcorn). First install the dependencies by running `npm install`. Then build it using [Mop](https://github.com/montagejs/mop) and copy the result to [assets/www](assets/www). Finally you can build the project using the Android SDK.
 
 ### Updating Popcorn
 
