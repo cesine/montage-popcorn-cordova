@@ -1,10 +1,10 @@
-				console.log("line 1 of bundle 1-1");
+console.log("line 1 of bundle 1-1");
 
 
 montageDefine("0fe37da", "ui/repetition.reel/repetition", {
 	dependencies: ["montage", "ui/component", "ui/template", "core/logger", "core/gate", "core/change-notification"],
 	factory: function(e, t, n) {
-						console.log("line 5 of bundle 1-1");
+		console.log("line 5 of bundle 1-1");
 
 		var r = e("montage").Montage,
 			i = e("ui/component").Component,
@@ -446,7 +446,7 @@ montageDefine("0fe37da", "ui/repetition.reel/repetition", {
 				canDraw: {
 					value: function() {
 
-										// console.log("line 450 of bundle 1-1");
+						// console.log("line 450 of bundle 1-1");
 
 						var e = this.canDrawGate.value,
 							t, n, r = this.childComponents.length;
@@ -461,7 +461,7 @@ montageDefine("0fe37da", "ui/repetition.reel/repetition", {
 				},
 				prepareForDraw: {
 					value: function() {
-																console.log("line 460 of bundle 1-1");
+						console.log("line 460 of bundle 1-1");
 
 						this._refreshSelectionTracking()
 					}
@@ -974,7 +974,7 @@ montageDefine("0fe37da", "ui/repetition.reel/repetition", {
 			load: {
 				value: function() {
 
-															console.log("line 977 of bundle 1-1");
+					console.log("line 977 of bundle 1-1");
 
 					this.loadLatestBoxofficeMovies(), this.loadUpcomingMovies(), this.loadTopDvdRentals(), this.loadInTheaters()
 				}
@@ -987,27 +987,27 @@ montageDefine("0fe37da", "ui/repetition.reel/repetition", {
 					window[n] = function(e) {
 						delete window[n], r.parentNode && r.parentNode.removeChild(r), t.apply(this, arguments)
 					};
-					 r.type = "text/javascript";
-					  r.src = e + "&callback=" + n;
+					r.type = "text/javascript";
+					r.src = e + "&callback=" + n;
 
-					  console.log("appending a script to the head, maybe doesnt work in android webview anymore?");
-					  //http://stackoverflow.com/questions/14373784/android-how-can-i-load-json-data-to-webview
-					  //
-					  //https://groups.google.com/forum/#!topic/android-developers/Vltq90RjAhM
-					  //
-					  //
-					  //http://www.sencha.com/forum/archive/index.php/t-114466.html
-					  //
-					  //http://tetontech.wordpress.com/2009/02/27/android-webview-and-ajax/
-					  //
-					  //
-					  //http://stackoverflow.com/questions/15937341/phonegap-ajax-jsonp-working-on-pc-but-not-in-android
-					  //
+					console.log("appending a script to the head, maybe doesnt work in android webview anymore?");
+					//http://stackoverflow.com/questions/14373784/android-how-can-i-load-json-data-to-webview
+					//
+					//https://groups.google.com/forum/#!topic/android-developers/Vltq90RjAhM
+					//
+					//
+					//http://www.sencha.com/forum/archive/index.php/t-114466.html
+					//
+					//http://tetontech.wordpress.com/2009/02/27/android-webview-and-ajax/
+					//
+					//
+					//http://stackoverflow.com/questions/15937341/phonegap-ajax-jsonp-working-on-pc-but-not-in-android
+					//
 
 
-					   document.head.appendChild(r)
+					document.head.appendChild(r)
 
-										console.log("end line 991"+ n);
+					console.log("end line 991" + n);
 
 				}
 			},
@@ -1025,14 +1025,14 @@ montageDefine("0fe37da", "ui/repetition.reel/repetition", {
 			},
 			loadLatestBoxofficeMovies: {
 				value: function(e) {
-										console.log("line loadLatestBoxofficeMovies");
+					console.log("line loadLatestBoxofficeMovies");
 
 					this.jsonpCall(this.BOXOFFICE_FEED, this.latestBoxofficeMoviesCallback)
 				}
 			},
 			latestBoxofficeMoviesCallback: {
 				value: function(e) {
-															console.log("line latestBoxofficeMoviesCallback");
+					console.log("line latestBoxofficeMoviesCallback");
 
 					var t = e.movies;
 					t ? this.dispatchEventNamed("remoteDataReceived", !0, !0, {
